@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.container-fluid {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+}
+
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color:#023E8A;
+}
+
+.h1 {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif; 
+    color: #F4F8F6;
+    margin-top: 180px; 
+}
+
+.display-6 {
+    text-align: justify;
+    color: #F4F8F6;
+    font-size: medium;
+    margin-top: 10px;
+}
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+}
+.card-img-top {
+    width: 100;
+    height: 110px;
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 3px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: justify;
+}
+
+.location-popup {
+    margin-top: 20px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    display: none;
+    z-index: 10;
+}
+.location-popup img {
+    width: 100%;
+    height: auto;
+}
+.btn-location:hover + .location-popup {
+    display: block;
+}
+.footer {
+    color: #2f2828;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #6200ff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}

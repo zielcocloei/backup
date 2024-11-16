@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Z.png">
+    <style>
+        .location-popup {
+            position: fixed;
+            top: 10%;
+            right: 5%;
+            width: 300px;
+            height: 250px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: none;
+        }
+
+        .popup-content {
+            padding: 10px;
+            position: relative;
+            height: 70%;
+        }
+
+        .location-popup.show {
+            display: block;
+        }
+
+        .location-popup.d-none {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tourist-spots">Tourist Spots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#food">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#more">More About Bali</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content">
+                    <p class="h1">Bali</p>
+                    <div>
+                        <p class="display-6">
+                            A magical blend of a colorful culture, friendly people, stunning nature, countless
+                            activities, tropical weather, culinary delights, vibrant nightlife, and beautiful
+                            accommodations. Bali is rated regularly as one of the best travel destinations in the world
+                            – for very good reasons. There is something great for everyone to explore and discover.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-location"
+                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">See
+                            Location</button>
+
+                        <!-- Location popup -->
+                        <div class="location-popup d-none" id="locationPopup">
+                            <div class="popup-content">
+                                <button type="button" class="btn-close" aria-label="Close" id="closePopup"></button>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31670.753110426405!2d112.7025492!3d-8.448349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2sBali!5e0!3m2!1sen!2sid!4v1699757492684!5m2!1sen!2sid"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards Section -->
+            <div class="col-md-6">
+                <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/kelingking beach.jpg" class="card-img-top" alt="Card 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Kelingking Beach</h5>
+                                <p class="card-text">The Kelingking Beach offers stunning panoramic views and
+                                    crystal-clear turquoise waters.ular spot for photography and hiking down to the
+                                    beach. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/ulun danu beratan temple.jpg" class="card-img-top" alt="Card 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Ulun Danu Beratan Temple</h5>
+                                <p class="card-text">Pura Ulun Danu Beratan, or Pura Bratan, is a major Hindu Shaivite
+                                    temple in Bali, Indonesia. The temple complex is on the shores of Lake Beratan in
+                                    the mountains near Bedugul. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/ceking rice terrace.jpg" class="card-img-top" alt="Card 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Ceking Rice Terraces</h5>
+                                <p class="card-text">The Ceking Rice Terraces is a long time icon of Bali scenery and
+                                    culture, with its famous green rice fields and slopes in the jungle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/bali zoo.jpg" class="card-img-top" alt="Card 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Bali Zoo</h5>
+                                <p class="card-text">Bali's first and only zoological park is a wondrous place where you
+                                    can learn the behavior of over 500 rare and exotic animals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Cards Section -->
+                <div class="row row-cols-1 row-cols-md-2 g-4 mt-4 d-none" id="moreCards">
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/campuhan ridge walk.jpg" class="card-img-top" alt="Card 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Campuhan Ridge Walk</h5>
+                                <p class="card-text">The Campuhan Ridge Walk is one of the most popular natural trails
+                                    in Bali, and it’s a scenic trek along a ridge line above a beautiful lush and green
+                                    valley below.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/sacred monkey forest sanctuary.jpg" class="card-img-top" alt="Card 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Sacred Monkey Forest Sanctuary</h5>
+                                <p class="card-text">The Sacred Monkey Forest Sanctuary is a nature reserve and temple
+                                    complex in Ubud, Bali, Indonesia. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/tegenungan waterfall.jpeg" class="card-img-top" alt="Card 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Tegunungan Waterfall</h5>
+                                <p class="card-text">Air Terjun Tegenungan is a beautiful natural waterfall located just
+                                    a half-hour drive from Ubud. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/uluwatu temple.jpg" class="card-img-top" alt="Card 8">
+                            <div class="card-body">
+                                <h5 class="card-title">Uluwatu Temple</h5>
+                                <p class="card-text">Uluwatu Temple (Pura Luhur Uluwatu) is one of six key temples
+                                    believed to be Bali's spiritual pillars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="moreCardsBtn" class="btn btn-primary mt-4" onclick="showMoreCards()">Show More</button>
+                <button id="seeLessCardsBtn" class="btn btn-primary mt-4 d-none" onclick="showLessCards()">See Less</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Bali. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:tour@bali.com">tour@bali.com</a></p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a> |
+                <a href="https://instagram.com" target="_blank">Instagram</a> |
+                <a href="https://twitter.com" target="_blank">Twitter</a> |
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybpyJwZHLv6gLOh9A9QUcc5hpH4w6Zz/5e5j6hL9fKCu5g9JgZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-pzjw8f+ua7Kw1TIq0G69+gXTlRZt+RJ6g1JwV2n2bD3nYb5Rry/Zlbx1PvZgdhvJp"
+        crossorigin="anonymous"></script>
+    <script>
+        document.querySelector('.btn-location').addEventListener('click', function () {
+            var locationPopup = document.getElementById('locationPopup');
+            locationPopup.classList.toggle('d-none');
+            locationPopup.classList.add('show');
+        });
+
+        document.getElementById('closePopup').addEventListener('click', function () {
+            var locationPopup = document.getElementById('locationPopup');
+            locationPopup.classList.remove('show');
+            locationPopup.classList.add('d-none');
+        });
+
+        function showMoreCards() {
+        document.getElementById('moreCards').classList.remove('d-none');
+        document.getElementById('moreCardsBtn').style.display = 'none';
+        document.getElementById('seeLessCardsBtn').classList.remove('d-none');
+    }
+
+    // Function to hide extra cards
+    function showLessCards() {
+        document.getElementById('moreCards').classList.add('d-none');
+        document.getElementById('moreCardsBtn').style.display = 'inline-block';
+        document.getElementById('seeLessCardsBtn').classList.add('d-none');
+    }
+
+    </script>
+</body>
+
+</html>
