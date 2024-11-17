@@ -1,0 +1,202 @@
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+/* Adjust navbar styles */
+.navbar.light-mode {
+    background-color: #f3dadf;
+}
+.navbar.dark-mode {
+    background-color: #343a40;
+}
+/* Card styles */
+.card.light-mode {
+    background-color: #37415c;
+    color: #212529;
+}
+.card.dark-mode {
+    background-color: #f1916d;
+    color: #f8f9fa;
+}
+
+/* General Styling */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%280, 0, 0, 0.7%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+body.dark-mode .nav-link {
+    color: #ffffff !important; 
+}
+
+
+.form-check-label {
+    margin-left: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Responsive Navigation */
+.collapse {
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.ms-auto {
+    margin-left: auto;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+    background-color: #413b61;
+    color: #ffffff;
+}
+
+body.dark-mode .nav-link {
+    color: #ffffff;
+}
+
+body.dark-mode .form-check-input {
+    background-color: #333333;
+    border: 1px solid #555555;
+}
+
+body.dark-mode .form-check-label {
+    color: #ffffff;
+}
+
+
+/* Hero Section */
+header {
+    background: linear-gradient(135deg, #6e7dff, #5a5c8a);
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+#about {
+    background-color: #f8f9fa; 
+    padding: 3rem 0; 
+    color: #333; 
+}
+
+#about h2 {
+    font-size: 2.5rem; 
+    color: #007bff; 
+    margin-bottom: 1.5rem; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+#about img {
+    max-width: 100%; 
+}
+
+
+#about .lead {
+    font-size: 1.2rem;
+    line-height: 1.8; 
+    color: blue; 
+    text-align: justify;
+}
+
+#about p {
+    margin-bottom: 1rem; 
+    text-align: justify;
+}
+
+#about .btn-primary {
+    background-color: #007bff; 
+    border-color: #007bff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out; 
+}
+
+#about .btn-primary:hover {
+    background-color: #0056b3; 
+    border-color: #0056b3;
+    color: #fff; 
+}
+
+@media (max-width: 768px) {
+    #about h2 {
+        font-size: 2rem; 
+    }
+    #about .lead {
+        font-size: 1rem;
+    }
+}
