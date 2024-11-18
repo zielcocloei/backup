@@ -2,29 +2,30 @@ body.light-mode {
     background-color: #f8f9fa;
     color: #212529;
 }
-/* Dark mode styles */
+
 body.dark-mode {
     background-color: #343a40;
     color: #f8f9fa;
 }
-/* Adjust navbar styles */
+
 .navbar.light-mode {
     background-color: #f3dadf;
 }
 .navbar.dark-mode {
     background-color: #343a40;
 }
-/* Card styles */
+
 .card.light-mode {
     background-color: #37415c;
-    color: #212529;
+    color: #e3b6b1;
+    
 }
 .card.dark-mode {
     background-color: #f1916d;
     color: #f8f9fa;
 }
 
-/* General Styling */
+
 .navbar-toggler {
     border: none;
     background: transparent;
